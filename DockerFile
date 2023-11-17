@@ -1,0 +1,5 @@
+FROM node:11-alpine as frontend
+WORKDIR /
+RUN npm install
+COPY . .
+COPY npm run
