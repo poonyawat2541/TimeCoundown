@@ -1,5 +1,5 @@
 FROM node:11-alpine as frontend
-WORKDIR /
+WORKDIR /main.html
 RUN npm install
 COPY . .
-COPY npm run
+COPY npm run /main.html/
