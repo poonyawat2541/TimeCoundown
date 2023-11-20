@@ -1,4 +1,3 @@
-FROM ubuntu
-MAINTAINER 
-RUN apt-get update
-CMD ["echo", "Hello Geeks!"]
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
+CMD ["bash", "/main.html"]
