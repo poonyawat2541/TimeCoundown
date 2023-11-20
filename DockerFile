@@ -1,3 +1,5 @@
-FROM nginx:alpine
-COPY . /usr/share/nginx/html
-CMD ["bash", "/main.html"]
+FROM openjdk:11-jdk
+
+RUN /main.html
+
+
